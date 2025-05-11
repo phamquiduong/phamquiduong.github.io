@@ -21,7 +21,7 @@ html {
 .avatar {
   position: absolute;
   bottom: 0;
-  left: 5%;
+  left: calc(var(--bs-gutter-x) * .5 + .7rem);
 }
 
 .logo {
