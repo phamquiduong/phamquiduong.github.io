@@ -1,6 +1,5 @@
 html {
   font-size: 14px;
-  min-width: 375px;
 }
 
 :root,
@@ -36,4 +35,8 @@ html {
 
 main > div {
   scroll-margin-top: 6rem;
+}
+
+.container {
+  max-width: 50rem;
 }
