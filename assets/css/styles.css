@@ -28,11 +28,14 @@ html {
   height: 3rem;
 }
 
+#work-study>div>ul>li {
+  border: var(--bs-border-width) var(--bs-border-style) transparent;
+}
+
 .card,
 #work-study>div>ul>li {
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   cursor: pointer;
-  border: var(--bs-border-width) var(--bs-border-style) transparent;
 }
 
 .card:hover,
