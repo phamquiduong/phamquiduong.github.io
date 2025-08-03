@@ -2,6 +2,10 @@ html {
   font-size: 14px;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 :root,
 [data-bs-theme=light] {
   --bs-body-bg-rgb: 248, 249, 250;
@@ -56,4 +60,9 @@ main>div {
 
 .about-me-icon {
   min-width: 2rem;
+}
+
+.certificate-card {
+  min-width: 18rem;
+  max-width: 18rem;
 }
