@@ -49,6 +49,7 @@ main>div {
   scroll-margin-top: 6rem;
 }
 
-.container {
+.container,
+.modal-dialog {
   max-width: 55rem;
 }
