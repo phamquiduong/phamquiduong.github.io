@@ -53,3 +53,7 @@ main>div {
 .modal-dialog {
   max-width: 55rem;
 }
+
+.about-me-icon {
+  min-width: 2rem;
+}

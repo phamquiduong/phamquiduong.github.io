@@ -2,10 +2,27 @@
 <html lang="en">
 
 <head>
+  <!-- Primary Meta Tags -->
+  <title>Phạm Quí Dương – Backend Developer</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Phạm Quí Dương – Backend Developer">
+  <meta name="description" content="Trang cá nhân của Phạm Quí Dương – Kỹ sư phần mềm với hơn 3 năm kinh nghiệm phát triển hệ thống backend sử dụng Python, AWS, và kiến trúc hiện đại.">
 
-  <title>Phạm Quí Dương</title>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://phamquiduong.github.io/">
+  <meta property="og:title" content="Phạm Quí Dương – Backend Developer">
+  <meta property="og:description" content="Trang cá nhân của Phạm Quí Dương – Kỹ sư phần mềm với hơn 3 năm kinh nghiệm phát triển hệ thống backend sử dụng Python, AWS, và kiến trúc hiện đại.">
+  <meta property="og:image" content="https://phamquiduong.github.io/assets/img/social/banner.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://phamquiduong.github.io/">
+  <meta name="twitter:title" content="Phạm Quí Dương – Backend Developer">
+  <meta name="twitter:description" content="Trang cá nhân của Phạm Quí Dương – Kỹ sư phần mềm với hơn 3 năm kinh nghiệm phát triển hệ thống backend sử dụng Python, AWS, và kiến trúc hiện đại.">
+  <meta name="twitter:image" content="https://phamquiduong.github.io/assets/img/social/banner.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
@@ -28,6 +45,36 @@
 
   <!-- Custom JS -->
   <script src="assets/js/script.js" defer></script>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Phạm Quí Dương",
+    "jobTitle": "Python Developer",
+    "description": "Trang cá nhân của Phạm Quí Dương – lập trình viên backend với hơn 3 năm kinh nghiệm phát triển hệ thống sử dụng Python, Django, FastAPI, AWS.",
+    "url": "https://phamquiduong.github.io/",
+    "image": "https://phamquiduong.github.io/assets/img/social/banner.png",
+    "sameAs": [
+      "https://www.facebook.com/PhamQuiDuong",
+      "https://www.instagram.com/phamquiduong_",
+      "https://www.tiktok.com/@phamquiduong",
+      "https://www.linkedin.com/in/phamquiduong/",
+      "https://github.com/phamquiduong"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bình Sơn",
+      "addressRegion": "Quảng Ngãi",
+      "addressCountry": "VN"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Đại học Bách Khoa - Đại Học Đà Nẵng"
+    }
+  }
+  </script>
 </head>
 
 <body class="bg-body">
@@ -44,7 +91,7 @@
 
         <ul class="navbar-nav mx-auto">
           <li class="nav-item me-3">
-            <a href="#home" class="nav-link">Tổng quan</a>
+            <a href="#home" class="nav-link">Trang chủ</a>
           </li>
 
           <li class="nav-item me-3">
@@ -56,19 +103,19 @@
           </li>
 
           <li class="nav-item me-3">
-            <a href="#project" class="nav-link">Dự án</a>
+            <a href="#certificate" class="nav-link">Chứng nhận</a>
           </li>
 
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Liên hệ</a>
+          <li class="nav-item me-3">
+            <a href="#project" class="nav-link">Dự án</a>
           </li>
         </ul>
 
         <hr>
 
         <div>
-          <a href="https://www.linkedin.com/in/phamquiduong/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary">
-            <i class="fa-brands fa-linkedin me-1"></i> Kết nối Linkedin
+          <a href="#contact" class="btn btn-outline-primary">
+            Liên hệ ngay <i class="fa-solid fa-share-from-square ms-1"></i>
           </a>
         </div>
       </div>
@@ -119,13 +166,30 @@
         </h5>
 
         <div class="ms-4" style="text-align: justify">
-          <p>Xin chào, tôi tên là <strong>Dương</strong>. Tôi có 3 năm kinh nghiệm làm lập trình viên backend với <strong>ngôn ngữ Python</strong>.</p>
+          <div class="d-flex">
+            <div class="about-me-icon"><i class="fa-solid fa-user"></i></div>
+            <p>Xin chào, tôi tên là <strong>Dương</strong>. Tôi có 3 năm kinh nghiệm làm lập trình viên backend với <strong>ngôn ngữ Python</strong>.</p>
+          </div>
 
-          <p>Tôi đã làm việc với các framework như <strong>Django</strong>, <strong>Flask</strong> và <strong>FastAPI</strong>, đồng thời có kinh nghiệm với <strong>dịch vụ web AWS</strong>.</p>
+          <div class="d-flex">
+            <div class="about-me-icon"><i class="fa-solid fa-code"></i></div>
+            <p>Tôi đã làm việc với các framework như <strong>Django</strong>, <strong>Flask</strong> và <strong>FastAPI</strong>, đồng thời có kinh nghiệm với <strong>dịch vụ web AWS</strong>.</p>
+          </div>
 
-          <p>Tôi có thế mạnh trong việc thiết kế và xây dựng các hệ thống backend. Tôi đặc biệt chú trọng đến chất lượng code, bảo mật và hiệu năng của hệ thống.</p>
+          <div class="d-flex">
+            <div class="about-me-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+            <p>Tôi có thế mạnh trong việc thiết kế và xây dựng các hệ thống backend. Tôi đặc biệt chú trọng đến chất lượng code, bảo mật và hiệu năng của hệ thống.</p>
+          </div>
 
-          <p>Hiện tại, <strong>tôi đang tìm kiếm một cơ hội mới để phát triển hơn nữa trong vai trò lập trình viên backend</strong>, nơi tôi có thể xây dựng các hệ thống ổn định, bảo mật, và có chất lượng cao, đồng thời đóng góp tích cực cho đội ngũ phát triển.</p>
+          <div class="d-flex">
+            <div class="about-me-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <p>Định hướng của tôi sẽ tập trung học <strong>chuyên sâu về kiến trúc hệ thống</strong>, và <strong>tối ưu hiệu suất backend.</strong></p>
+          </div>
+
+          <div class="d-flex">
+            <div class="about-me-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p>Hiện tại, tôi <strong>không chủ động tìm kiếm cơ hội việc làm mới</strong>, tuy nhiên tôi vẫn luôn sẵn sàng <strong>kết nối và học hỏi</strong>.</p>
+          </div>
         </div>
         <div class="mt-4">
           <a href="assets/pdf/[Python Developer] Pham Qui Duong.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-success">
@@ -198,7 +262,7 @@
       </div>
     </div>
 
-    <div class="container mb-5">
+    <div id="certificate" class="container mb-5">
       <h5 class="mb-4">
         <i class="fa-solid fa-award me-1"></i> Một số chứng nhận & Giải thưởng
       </h5>
@@ -296,6 +360,12 @@
             <i class="fa-brands fa-github me-1"></i> Github
           </a>
         </div>
+      </div>
+
+      <div class="container text-end">
+        <small class="font-monospace">
+          © 2025 Phạm Quí Dương. Trang portfolio cá nhân • Cập nhật lần cuối: 04/08/2025
+        </small>
       </div>
     </div>
   </main>
