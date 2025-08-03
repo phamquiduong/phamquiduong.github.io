@@ -46,3 +46,21 @@ certificateTKPFirstPrize.addEventListener(
     'assets/img/certifications/tkp-11.jpg'
   )
 )
+
+
+// Open work & education link
+const linkMynaviTechTusVN = document.querySelector('#linkMynaviTechTusVN')
+const linkDUT = document.querySelector('#linkDUT')
+const linkTKP = document.querySelector('#linkTKP')
+
+linkMynaviTechTusVN.addEventListener('click', () => {
+  window.open('https://mynavitechtus.com/', '_blank', 'noopener,noreferrer')
+})
+
+linkDUT.addEventListener('click', () => {
+  window.open('https://dut.udn.vn/', '_blank', 'noopener,noreferrer')
+})
+
+linkTKP.addEventListener('click', () => {
+  window.open('https://www.tkp.edu.vn/', '_blank', 'noopener,noreferrer')
+})
