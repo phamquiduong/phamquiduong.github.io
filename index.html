@@ -21,15 +21,21 @@
   <meta name="twitter:image" content="https://phamquiduong.github.io/assets/img/social/banner.png">
 
   <!-- Favicon -->
-  <link rel="icon" href="/assets/img/favicon/favicon.ico">
-  <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="PQD" />
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
 
-  <!-- Styles & Scripts -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/change_theme.js"></script>
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/script.js" defer></script>
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -59,11 +65,11 @@
 </head>
 
 <body class="bg-body">
-  <h1 class="d-none">Phạm Quí Dương – Python Backend Developer</h1>
+  <header id="top"></header>
 
-  <nav class="navbar navbar-expand-md bg-body-tertiary border-bottom shadow-sm sticky-top">
+  <nav class="navbar navbar-expand-md bg-body-tertiary border-bottom shadow-sm sticky-top mb-5">
     <div class="container">
-      <a href="/" class="navbar-brand mb-0 h1">PQD</a>
+      <a href="#top" class="navbar-brand mb-0 h1">PQD</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -71,284 +77,244 @@
 
       <div class="collapse navbar-collapse" id="navbarText">
         <hr>
-
         <ul class="navbar-nav mx-auto">
           <li class="nav-item me-3">
-            <a href="#home" class="nav-link">Trang chủ</a>
+            <a href="#intro" class="nav-link">Giới thiệu</a>
           </li>
-
           <li class="nav-item me-3">
-            <a href="#experience-skill" class="nav-link">Giới thiệu</a>
+            <a href="#work" class="nav-link">Làm việc</a>
           </li>
-
           <li class="nav-item me-3">
-            <a href="#work-study" class="nav-link">Kinh nghiệm & học vấn</a>
+            <a href="#study" class="nav-link">Học vấn</a>
           </li>
-
           <li class="nav-item me-3">
             <a href="#certificate" class="nav-link">Chứng nhận</a>
           </li>
-
           <li class="nav-item me-3">
-            <a href="#project" class="nav-link">Dự án</a>
+            <a href="#contact" class="nav-link">Liên hệ</a>
           </li>
         </ul>
 
         <hr>
-
         <div>
-          <a href="#contact" class="btn btn-outline-primary">
-            Liên hệ ngay <i class="fa-solid fa-share-from-square ms-1"></i>
-          </a>
+          <button class="btn btn-outline-primary px-3 fw-medium me-2" id="changeThemeModeBtn"></button>
+          <script src="assets/js/change_theme_btn.js"></script>
+          <button class="btn btn-outline-success px-3 fw-medium" onclick="alert('Coming soon!!!')">vi</button>
         </div>
       </div>
     </div>
   </nav>
 
-  <main class="mt-5">
-    <div id="home" class="container mb-5">
-      <div class="bg-body-tertiary rounded border shadow-sm">
-        <div class="profile">
-          <img class="cover w-100 rounded-top" src="assets/img/cover.jpg" alt="cover">
-          <img class="avatar w-25 rounded-circle border border-white border-3 bg-dark shadow" src="assets/img/favicon/favicon.svg" alt="avatar">
-          <div class="profile-space"></div>
-        </div>
+  <main>
+    <div id="home" class="container bg-body-tertiary rounded border shadow-sm mb-5 px-0 pb-4">
+      <div class="position-relative mb-3">
+        <img class="cover w-100 rounded-top" src="assets/img/cover.avif" alt="cover">
+        <img src="/assets/img/favicon/web-app-manifest-512x512.png" alt="avatar" id="avatar" class="position-absolute bottom-0 w-25 rounded-circle border border-white border-3 bg-dark shadow" style="left: 1.5rem;">
+        <div id="profile-space"></div>
+        <script src="assets/js/profile_space.js"></script>
+      </div>
 
-        <div class="pt-3 px-4 pb-5">
-          <h1 class="fs-2 mb-3">Phạm Quí Dương</h1>
-
-          <div class="ms-3">
-            <h2 class="fs-6 text-body-secondary mb-2">
-              <i class="fa-solid fa-briefcase me-1"></i>
-              Lập trình viên Python
-            </h2>
-
-            <div class="text-body-tertiary mb-2">
-              <i class="fa-solid fa-location-dot me-2"></i>
-              Bình Sơn, Quảng Ngãi, Việt Nam
-            </div>
-
-            <div class="mb-2">
-              <i class="fa-solid fa-phone me-1"></i>
-              <a href="tel:+84967557910">0967 557 910</a>
-            </div>
-
-            <div>
-              <i class="fa-solid fa-envelope me-1"></i>
-              <a href="mailto:phamquiduong@outlook.com">phamquiduong@outlook.com</a>
-            </div>
+      <div class="mx-4">
+        <h2 class="mb-3">Phạm Quí Dương</h2>
+        <div class="ms-1">
+          <div class="row">
+            <div class="col-auto" style="width: 2rem;"><i class="fa-solid fa-location-dot"></i></div>
+            <p class="col">Bình Sơn, Quảng Ngãi, Việt Nam</p>
+          </div>
+          <div class="row">
+            <div class="col-auto" style="width: 2rem;"><i class="fa-solid fa-briefcase"></i></div>
+            <p class="col">Kỹ sư công nghệ thông tin</p>
+          </div>
+          <div class="row">
+            <div class="col-auto" style="width: 2rem;"><i class="fa-solid fa-phone"></i></div>
+            <p class="col">
+              <a href="tel:+84967557910" class="link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">+84 967 557 910</a>
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-auto" style="width: 2rem;"><i class="fa-solid fa-envelope"></i></div>
+            <p class="col">
+              <a href="mailto:phamquiduong@outlook.com" class="link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">phamquiduong@outlook.com</a> |
+              <a href="mailto:phamquiduongg@gmail.com" class="link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">phamquiduongg@gmail.com</a>
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="experience-skill" class="container mb-5">
-      <div class="border rounded shadow-sm bg-body-tertiary p-4">
-        <h5 class="mb-4">
-          <i class="fa-solid fa-circle-check me-1"></i> Giới thiệu về tôi
-        </h5>
-
-        <div class="ms-4 text-justify">
-          <div class="d-flex">
-            <div class="about-me-icon"><i class="fa-solid fa-user"></i></div>
-            <p>Xin chào, tôi tên là <strong>Dương</strong>. Tôi có 3 năm kinh nghiệm làm lập trình viên backend với <strong>ngôn ngữ Python</strong>.</p>
-          </div>
-
-          <div class="d-flex">
-            <div class="about-me-icon"><i class="fa-solid fa-code"></i></div>
-            <p>Tôi đã làm việc với các framework như <strong>Django</strong>, <strong>Flask</strong> và <strong>FastAPI</strong>, đồng thời có kinh nghiệm với <strong>dịch vụ web AWS</strong>.</p>
-          </div>
-
-          <div class="d-flex">
-            <div class="about-me-icon"><i class="fa-solid fa-thumbs-up"></i></div>
-            <p>Tôi có thế mạnh trong việc thiết kế và xây dựng các hệ thống backend. Tôi đặc biệt chú trọng đến chất lượng code, bảo mật và hiệu năng của hệ thống.</p>
-          </div>
-
-          <div class="d-flex">
-            <div class="about-me-icon"><i class="fa-solid fa-bullseye"></i></div>
-            <p>Định hướng của tôi sẽ tập trung học <strong>chuyên sâu về kiến trúc hệ thống</strong>, và <strong>tối ưu hiệu suất backend.</strong></p>
-          </div>
-
-          <div class="d-flex">
-            <div class="about-me-icon"><i class="fa-solid fa-quote-left"></i></div>
-            <p>Hiện tại, tôi <strong>không chủ động tìm kiếm cơ hội việc làm mới</strong>, tuy nhiên tôi vẫn luôn sẵn sàng <strong>kết nối và học hỏi</strong>.</p>
-          </div>
+    <div id="intro" class="container border rounded shadow-sm bg-body-tertiary p-4 mb-5">
+      <h4 class="mb-4">Giới thiệu về tôi</h4>
+      <div class="ms-1 text-justify">
+        <div class="row">
+          <div class="col-auto" style="width: 2rem;"><i class="fa-solid fa-user"></i></div>
+          <p class="col">
+            Xin chào, mình là Dương — một <strong>backend developer</strong>
+            thích xây dựng những hệ thống sạch, ổn định và dễ mở rộng.
+          </p>
         </div>
-        <div class="mt-4">
-          <a href="assets/pdf/[Python Developer] Pham Qui Duong.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-success">
-            <i class="fa-solid fa-paperclip me-1"></i> Xem CV chi tiết của tôi
-          </a>
+        <div class="row">
+          <div class="col-auto" style="width: 2rem;"><i class="fa-solid fa-thumbs-up"></i></div>
+          <p class="col">
+            Mình quê ở Quảng Ngãi,
+            tốt nghiệp Đại học Bách Khoa Đà Nẵng với bằng <strong>Kỹ sư Công nghệ Thông tin</strong>.
+          </p>
         </div>
+        <div class="row">
+          <div class="col-auto" style="width: 2rem;"><i class="fa-solid fa-code"></i></div>
+          <p class="col">
+            Hiện tại mình chủ yếu làm việc với <strong>Python</strong>, các framework như <strong>Django</strong>, Flask, FastAPI,
+            và có kinh nghiệm triển khai hệ thống trên <strong>AWS</strong>.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-auto" style="width: 2rem;"><i class="fa-solid fa-bullseye"></i></div>
+          <p class="col">
+            Điều khiến mình khác biệt không phải là biết nhiều thứ, mà là cách mình tiếp cận vấn đề
+            — mình luôn thích thử thách, học hỏi không ngừng và tìm hiểu mọi thứ thật sâu, thật chỉn chu.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-auto" style="width: 2rem;"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="col">Cảm ơn bạn đã ghé qua, mình luôn sẵn lòng kết nối, học hỏi và chia sẻ cùng mọi người!</p>
+        </div>
+      </div>
+      <div class="mt-4">
+        <a href="assets/pdf/[Python Developer] Pham Qui Duong.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-success">
+          <i class="fa-solid fa-paperclip me-1"></i> Xem CV chi tiết của tôi
+        </a>
       </div>
     </div>
 
-    <div id="work-study" class="container mb-5">
-      <div class="border rounded shadow-sm bg-body-tertiary p-4">
-        <h5 class="mb-4">
-          <i class="fa-solid fa-briefcase me-1"></i> Kinh nghiệm làm việc
-        </h5>
-
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex bg-body-tertiary py-4 rounded" id="linkMynaviTechTusVN">
-            <div class="me-3">
-              <img src="assets/img/logo/nals.png" alt="Nal" class="logo" loading="lazy">
-            </div>
-
-            <div class="me-3">
-              <h6>Mynavi TechTus Vietnam - Đà Nẵng</h6>
-              <div>Kỹ sư Backend</div>
-            </div>
-
-            <div class="ms-auto">
-              <small>7/2021-11/2024</small>
-            </div>
-          </li>
-        </ul>
-
-        <hr class="mb-4">
-
-        <h5 class="mb-3">
-          <i class="fa-solid fa-graduation-cap me-1"></i> Học vấn
-        </h5>
-
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex bg-body-tertiary py-4 rounded mb-3" id="linkDUT">
-            <div class="me-3">
-              <img src="assets/img/logo/dut.svg" alt="DUT" class="logo" loading="lazy">
-            </div>
-
-            <div class="me-3">
-              <h6>Đại học Bách Khoa - Đại Học Đà Nẵng</h6>
-              <div>Kỹ sư Công nghệ thông tin</div>
-            </div>
-
-            <div class="ms-auto">
-              <small>2017-2023</small>
-            </div>
-          </li>
-
-          <li class="list-group-item d-flex bg-body-tertiary py-4 rounded" id="linkTKP">
-            <div class="me-3">
-              <img src="assets/img/logo/tkp.png" alt="TKP" class="logo" loading="lazy">
-            </div>
-
-            <div class="me-3">
-              <h6>THPT Trần Kỳ Phong - Quảng Ngãi</h6>
-              <div>Đội tuyển HSG Tin cấp tỉnh</div>
-            </div>
-
-            <div class="ms-auto">
-              <small>2014-2017</small>
-            </div>
-          </li>
-        </ul>
-      </div>
+    <div id="work" class="container border rounded shadow-sm bg-body-tertiary mb-5 p-4">
+      <h4 class="mb-4">Kinh nghiệm làm việc</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item py-4 d-flex" id="linkMynaviTechTusVN">
+          <div class="me-3"><img src="assets/img/logo/nals.png" alt="Nal" loading="lazy" style="width: 3rem; height: 3rem;"></div>
+          <div class="me-3">
+            <h6>
+              <a href="https://mynavitechtus.com/" target="_blank" class="link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                Mynavi TechTus Vietnam - Đà Nẵng
+              </a>
+            </h6>
+            <div>Lập trình viên</div>
+          </div>
+          <div class="ms-auto"><small>7/2021-11/2024</small></div>
+        </li>
+      </ul>
     </div>
 
-    <div id="certificate" class="container mb-5">
-      <h5 class="mb-4">
-        <i class="fa-solid fa-award me-1"></i> Một số chứng nhận & Giải thưởng
-      </h5>
+    <div id="study" class="container border rounded shadow-sm bg-body-tertiary mb-5 p-4">
+      <h4 class="mb-4">Học vấn</h4>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item py-4 d-flex" id="linkDUT">
+          <div class="me-3"><img src="assets/img/logo/dut.svg" alt="DUT" loading="lazy" style="width: 3rem; height: 3rem;"></div>
+          <div class="me-3">
+            <h6>
+              <a href="https://dut.udn.vn/" target="_blank" class="link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                Đại học Bách Khoa - Đại Học Đà Nẵng
+              </a>
+            </h6>
+            <div>Kỹ sư Công nghệ thông tin</div>
+          </div>
+          <div class="ms-auto"><small>2017-2023</small></div>
+        </li>
 
-      <div class="d-flex overflow-x-scroll pb-3">
-        <div class="card me-5 certificate-card" id="certificateDUTEngineer">
+        <li class="list-group-item py-4 d-flex" id="linkTKP">
+          <div class="me-3"><img src="assets/img/logo/tkp.png" alt="TKP" loading="lazy" style="width: 3rem; height: 3rem;"></div>
+          <div class="me-3">
+            <h6>
+              <a href="https://www.tkp.edu.vn/" target="_blank" class="link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                THPT Trần Kỳ Phong - Quảng Ngãi
+              </a>
+            </h6>
+            <div>Đội tuyển HSG Tin cấp tỉnh</div>
+          </div>
+          <div class="ms-auto"><small>2014-2017</small></div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="certificate" class="container border rounded shadow-sm bg-body-tertiary mb-5 p-4">
+      <h4 class="mb-4">Một số chứng nhận & Giải thưởng</h4>
+      <div class="d-flex overflow-x-scroll rounded pb-3">
+        <div class="card me-5 hover-effect" style="min-width: 16rem; max-width: 16rem;" onclick="openCertificateModal('Kỹ sư công nghệ thông tin khóa 2017', 'assets/img/certifications/dut.avif')">
           <div class="ratio ratio-1x1">
-            <img src="assets/img/certifications/dut.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="DUT Software Engineer" loading="lazy">
+            <img src="assets/img/certifications/dut.avif" class="card-img-top w-100 h-100 object-fit-cover" alt="DUT Software Engineer" loading="lazy">
           </div>
-
           <div class="card-body bg-body-tertiary rounded-bottom">
-            <h6 class="card-title">Kỹ sư công nghệ thông tin khóa 2017</h6>
-            <p class="card-text">3/2023</p>
+            <h6 class="card-title text-center">Kỹ sư công nghệ thông tin khóa 2017</h6>
+            <hr>
+            <p class="card-text text-end"><small>3/2023</small></p>
           </div>
         </div>
 
-        <div class="card me-5 certificate-card" id="certificateTKPSecondPrize">
+        <div class="card me-5 hover-effect" style="min-width: 16rem; max-width: 16rem;" onclick="openCertificateModal('Giải nhì HSG Tin cấp tỉnh Quảng Ngãi lớp 12', 'assets/img/certifications/tkp-12.avif')">
           <div class="ratio ratio-1x1">
-            <img src="assets/img/certifications/tkp-12.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="TKP 12" loading="lazy">
+            <img src="assets/img/certifications/tkp-12.avif" class="card-img-top w-100 h-100 object-fit-cover" alt="TKP 12" loading="lazy">
           </div>
-
           <div class="card-body bg-body-tertiary rounded-bottom">
-            <h6 class="card-title">Giải nhì HSG Tin cấp tỉnh Quảng Ngãi lớp 12</h6>
-            <p class="card-text">11/2016</p>
+            <h6 class="card-title text-center">Giải nhì HSG Tin cấp tỉnh Quảng Ngãi lớp 12</h6>
+            <hr>
+            <p class="card-text text-end"><small>11/2016</small></p>
           </div>
         </div>
 
-        <div class="card certificate-card" id="certificateTKPFirstPrize">
+        <div class="card hover-effect" style="min-width: 16rem; max-width: 16rem;" onclick="openCertificateModal('Giải nhất HSG Tin cấp tỉnh Quảng Ngãi lớp 11', 'assets/img/certifications/tkp-11.avif')">
           <div class="ratio ratio-1x1">
-            <img src="assets/img/certifications/tkp-11.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="TKP 11" loading="lazy">
+            <img src="assets/img/certifications/tkp-11.avif" class="card-img-top w-100 h-100 object-fit-cover" alt="TKP 11" loading="lazy">
           </div>
-
           <div class="card-body bg-body-tertiary rounded-bottom">
-            <h6 class="card-title">Giải nhất HSG Tin cấp tỉnh Quảng Ngãi lớp 11</h6>
-            <p class="card-text">4/2016</p>
+            <h6 class="card-title text-center">Giải nhất HSG Tin cấp tỉnh Quảng Ngãi lớp 11</h6>
+            <hr>
+            <p class="card-text text-end"><small>4/2016</small></p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Button trigger modal -->
-    <button type="button" class="d-none" data-bs-toggle="modal" data-bs-target="#certificateModal" id="certificateModalBtn"></button>
-    <!-- Modal -->
-    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="certificateModalLabel"><span id="certificateTitle"></span></h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img class="w-100" src="#" alt="Cerfiticate image" id="certificateImage">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="project" class="container mb-5">
-      <div class="border rounded shadow-sm bg-body-tertiary p-4">
-        <h5 class="mb-4">
-          <i class="fa-solid fa-pen-nib me-1"></i> Một số dự án của tôi
-        </h5>
-
-        <small>Cập nhật sau</small>
       </div>
     </div>
 
     <div id="contact" class="container-fluid bg-body-tertiary p-4 border-top">
       <div class="container mb-5">
-        <h5 class="mb-4">
-          <i class="fa-solid fa-link me-1"></i> Hãy kết nối với tôi
-        </h5>
-
         <div class="text-center">
-          <a href="https://www.facebook.com/PhamQuiDuong" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary me-4 mb-4">
+          <a href="https://www.facebook.com/PhamQuiDuong" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mx-2 mb-4">
             <i class="fa-brands fa-facebook me-1"></i> Facebook
           </a>
-
-          <a href="https://www.instagram.com/phamquiduong_" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary me-4 mb-4">
+          <a href="https://www.instagram.com/phamquiduong_" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mx-2 mb-4">
             <i class="fa-brands fa-instagram me-1"></i> Instagram
           </a>
-
-          <a href="https://www.tiktok.com/@phamquiduong" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary me-4 mb-4">
+          <a href="https://www.tiktok.com/@phamquiduong" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mx-2 mb-4">
             <i class="fa-brands fa-tiktok me-1"></i> Tiktok
           </a>
-
-          <a href="https://www.linkedin.com/in/phamquiduong/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary me-4 mb-4">
+          <a href="https://www.linkedin.com/in/phamquiduong/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mx-2 mb-4">
             <i class="fa-brands fa-linkedin me-1"></i> Linkedin
           </a>
-
-          <a href="https://github.com/phamquiduong" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mb-4">
+          <a href="https://github.com/phamquiduong" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mx-2 mb-4">
             <i class="fa-brands fa-github me-1"></i> Github
           </a>
         </div>
       </div>
 
       <div class="container text-end">
-        <small class="font-monospace">
-          © 2025 Phạm Quí Dương. Trang portfolio cá nhân • Cập nhật lần cuối: 04/08/2025
-        </small>
+        <small class="font-monospace">© Phạm Quí Dương. Trang portfolio cá nhân • Cập nhật lần cuối: 05/10/2025</small>
       </div>
     </div>
   </main>
+
+  <!-- Modal -->
+  <button type="button" class="d-none" data-bs-toggle="modal" data-bs-target="#certificateModal" id="certificateModalBtn"></button>
+  <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="certificateModalLabel"><span id="certificateTitle"></span></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="w-100" src="#" alt="Cerfiticate image" id="certificateImage">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/open-modal.js"></script>
 </body>
 
 </html>

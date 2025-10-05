@@ -2,10 +2,6 @@ html {
   font-size: 14px;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
 :root,
 [data-bs-theme=light] {
   --bs-body-bg-rgb: 248, 249, 250;
@@ -14,39 +10,12 @@ html {
 
 [data-bs-theme=dark] {
   --bs-body-bg-rgb: 33, 37, 41;
+  --bs-body-bg: #2B3035;
   --bs-tertiary-bg-rgb: 43, 48, 53;
 }
 
-.profile {
-  position: relative;
-}
-
-.avatar {
-  position: absolute;
-  bottom: 0;
-  left: calc(var(--bs-gutter-x) * .5 + .7rem);
-}
-
-.logo {
-  width: 3rem;
-  height: 3rem;
-}
-
-#work-study>div>ul>li {
-  border: var(--bs-border-width) var(--bs-border-style) transparent;
-}
-
-.card,
-#work-study>div>ul>li {
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.card:hover,
-#work-study>div>ul>li:hover {
-  box-shadow: var(--bs-box-shadow);
-  transform: translateY(-0.3rem);
-  border-color: var(--bs-border-color);
+.text-justify {
+  text-align: justify;
 }
 
 main>div {
@@ -58,11 +27,12 @@ main>div {
   max-width: 55rem;
 }
 
-.about-me-icon {
-  min-width: 2rem;
+.hover-effect {
+  transition: transform .3s;
+  cursor: pointer;
 }
 
-.certificate-card {
-  min-width: 18rem;
-  max-width: 18rem;
+.hover-effect:hover {
+  box-shadow: var(--bs-box-shadow) !important;
+  transform: translateY(-.3rem);
 }
