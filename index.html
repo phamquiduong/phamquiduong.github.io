@@ -36,101 +36,92 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
 
+    <link rel="stylesheet" href="/assets/css/index.css" />
     <script src="assets/js/change_theme.js"></script>
-
-    <style>
-      html {
-        font-size: 14px;
-      }
-    </style>
   </head>
+
   <body class="bg-body-tertiary">
-    <div class="container border rounded my-4 px-0 shadow bg-body" style="min-width: 310px; max-width: 480px">
-      <div class="text-bg-primary rounded-top py-5">
-        <div class="text-center">
-          <img
-            src="/assets/img/favicon/web-app-manifest-512x512.png"
-            alt="Ảnh đại diện của Phạm Quí Dương"
-            class="rounded-circle border border-white border-3"
-            style="width: 33%"
-          />
+    <main>
+      <article class="container border rounded my-4 px-0 shadow bg-body" style="min-width: 310px; max-width: 480px">
+        <div class="text-bg-primary rounded-top py-5">
+          <div class="text-center">
+            <img
+              src="/assets/img/avatar.avif"
+              alt="Ảnh đại diện của Phạm Quí Dương"
+              class="rounded-circle border border-white border-3"
+              style="width: 33%"
+            />
+          </div>
+          <h1 class="fs-3 text-center pt-3">Phạm Quí Dương</h1>
         </div>
-        <h1 class="fs-3 text-center pt-3">Phạm Quí Dương</h1>
-      </div>
-      <div class="py-3">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item px-4 py-3">
-            <h2 class="fs-6 mb-2"><i class="fa-solid fa-phone me-1" aria-hidden="true"></i> Điện thoại</h2>
-            <div>
+
+        <div class="py-3">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-4 py-3">
+              <h2 class="fs-6"><i class="fa-solid fa-phone me-1" aria-hidden="true"></i> Điện thoại</h2>
+              <div>
+                <a class="link" href="tel:+84967557910">+84 967 557 910</a>
+              </div>
+            </li>
+
+            <li class="list-group-item px-4 py-3">
+              <h2 class="fs-6"><i class="fa-solid fa-envelope me-1" aria-hidden="true"></i> Email</h2>
+              <div>
+                <a class="link" href="mailto:phamquiduong@outlook.com">phamquiduong@outlook.com</a>
+              </div>
+              <div>
+                <a class="link" href="mailto:phamquiduongg@gmail.com">phamquiduongg@gmail.com</a>
+              </div>
+            </li>
+
+            <li class="list-group-item px-4 py-3">
+              <h2 class="fs-6 mb-3"><i class="fa-solid fa-file-pdf me-1" aria-hidden="true"></i> CV của tôi</h2>
+              <div class="mb-2">
+                <a class="btn btn-primary me-2" href="/assets/pdf/cv.pdf" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-arrow-up-right-from-square me-1" aria-hidden="true"></i> Xem ở tab mới
+                </a>
+                hoặc
+                <a class="link fw-medium" href="/assets/pdf/cv.pdf" download="[Python Developer] Pham Qui Duong.pdf">
+                  Tải về <i class="fa-solid fa-download" aria-hidden="true"></i>
+                </a>
+              </div>
+            </li>
+
+            <li class="list-group-item px-4 py-3 text-center">
               <a
-                class="link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="tel:+84967557910"
-                >+84 967 557 910
-              </a>
-            </div>
-          </li>
-          <li class="list-group-item px-4 py-3">
-            <h2 class="fs-6 mb-2"><i class="fa-solid fa-envelope me-1" aria-hidden="true"></i> Email</h2>
-            <div>
-              <a
-                class="link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="mailto:phamquiduong@outlook.com"
-                >phamquiduong@outlook.com
-              </a>
-            </div>
-            <div>
-              <a
-                class="link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="mailto:phamquiduongg@gmail.com"
-                >phamquiduongg@gmail.com
-              </a>
-            </div>
-          </li>
-          <li class="list-group-item px-4 py-3">
-            <h2 class="fs-6 mb-3"><i class="fa-solid fa-file-pdf me-1" aria-hidden="true"></i>CV của tôi</h2>
-            <div class="mb-2">
-              <a class="btn btn-primary me-2" href="/assets/pdf/cv.pdf" target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Xem ở tab mới
-              </a>
-              hoặc
-              <a
-                class="link-offset-2-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-medium"
-                href="/assets/pdf/cv.pdf"
-                download="[Python Developer] Pham Qui Duong.pdf"
+                href="https://www.facebook.com/PhamQuiDuong"
+                target="_blank"
+                class="btn mb-2"
+                rel="noopener noreferrer"
               >
-                Tải về <i class="fa-solid fa-download" aria-hidden="true"></i>
+                <i class="fa-brands fa-facebook me-1" aria-hidden="true"></i> Facebook
               </a>
-            </div>
-          </li>
-          <li class="list-group-item px-4 py-3 text-center">
-            <a href="https://www.facebook.com/PhamQuiDuong" target="_blank" class="btn mb-2" rel="noopener noreferrer">
-              <i class="fa-brands fa-facebook me-1" aria-hidden="true"></i> Facebook
-            </a>
-            <a
-              href="https://www.instagram.com/phamquiduong_"
-              target="_blank"
-              class="btn mb-2"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-brands fa-instagram me-1" aria-hidden="true"></i> Instagram
-            </a>
-            <a href="https://www.tiktok.com/@phamquiduong" target="_blank" class="btn mb-2" rel="noopener noreferrer">
-              <i class="fa-brands fa-tiktok me-1" aria-hidden="true"></i> TikTok
-            </a>
-            <a
-              href="https://www.linkedin.com/in/phamquiduong/"
-              target="_blank"
-              class="btn mb-2"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-brands fa-linkedin me-1" aria-hidden="true"></i> LinkedIn
-            </a>
-            <a href="https://github.com/phamquiduong" target="_blank" class="btn mb-2" rel="noopener noreferrer">
-              <i class="fa-brands fa-github me-1" aria-hidden="true"></i> Github
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+              <a
+                href="https://www.instagram.com/phamquiduong_"
+                target="_blank"
+                class="btn mb-2"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-instagram me-1" aria-hidden="true"></i> Instagram
+              </a>
+              <a href="https://www.tiktok.com/@phamquiduong" target="_blank" class="btn mb-2" rel="noopener noreferrer">
+                <i class="fa-brands fa-tiktok me-1" aria-hidden="true"></i> TikTok
+              </a>
+              <a
+                href="https://www.linkedin.com/in/phamquiduong/"
+                target="_blank"
+                class="btn mb-2"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-linkedin me-1" aria-hidden="true"></i> LinkedIn
+              </a>
+              <a href="https://github.com/phamquiduong" target="_blank" class="btn mb-2" rel="noopener noreferrer">
+                <i class="fa-brands fa-github me-1" aria-hidden="true"></i> Github
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
