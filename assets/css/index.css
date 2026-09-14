@@ -16,6 +16,19 @@ html {
   border: 1px solid var(--bs-body-color);
 }
 
+/* Card background */
+.bg-card-cover {
+  background: rgba(var(--bs-primary-rgb), 0.6);
+}
+
+.bg-card-body {
+  background: rgba(var(--bs-body-bg-rgb), 0.8);
+}
+
+.list-group-item {
+  background: none;
+}
+
 /* Background animation */
 body {
   margin: auto;
