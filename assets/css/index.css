@@ -7,8 +7,8 @@ html {
   background: none;
 }
 
-.vh-100 {
-  height: 100dvh !important;
+.min-vh-100 {
+  min-height: 100dvh !important;
 }
 
 /* Link */
