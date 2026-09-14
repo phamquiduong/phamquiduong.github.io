@@ -7,6 +7,10 @@ html {
   background: none;
 }
 
+.vh-100 {
+  height: 100dvh !important;
+}
+
 /* Link */
 .link {
   display: inline-block;
@@ -36,7 +40,12 @@ html {
 }
 
 /* Background animation */
-body {
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
   background: linear-gradient(
     315deg,
     rgba(101, 0, 94, 1) 3%,
@@ -65,7 +74,7 @@ body {
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
-  height: 15rem;
+  height: 25%;
   animation: wave 10s -3s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 0.8;
